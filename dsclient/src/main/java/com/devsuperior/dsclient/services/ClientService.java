@@ -71,8 +71,4 @@ public class ClientService {
 		entity.setChildren(dto.getChildren());
 		entity.setBirthDate(dto.getBirthDate());
 	}
-
-	
-
-	
 }
