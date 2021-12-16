@@ -8,6 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.dao.EmptyResultDataAccessException;
 
 import com.devsuperior.dsclient.entity.Client;
 import com.devsuperior.dsclient.tests.Factory;
@@ -21,6 +22,7 @@ public class ClientRepositoryTests {
 	private Long existingId;
 	private Long nonExistingId;
 	private Long countTotalElements;
+	
 	private Client client;
 	
 	@BeforeEach
@@ -74,5 +76,12 @@ public class ClientRepositoryTests {
 		
 		Assertions.assertTrue(obj.isEmpty());
 	}
-	
+
+	@Test
+	public void deleteShouldThrowEmptyResultDataAccessExceptionWhenIdDoesNotExist() {
+		
+		Assertions.assertThrows(EmptyResultDataAccessException.class, () ->{
+			repository.deleteById(nonExistingId);
+		});
+	}
 }
