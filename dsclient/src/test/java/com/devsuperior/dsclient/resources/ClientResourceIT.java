@@ -52,7 +52,7 @@ public class ClientResourceIT {
 	@Test
 	public void findAllShouldReturnPageSortedByName() throws Exception{
 		
-		ResultActions result = mockMvc.perform(get("/clients?orderBy=name")
+		ResultActions result = mockMvc.perform(get("/clients?sort=name")
 				.accept(MediaType.APPLICATION_JSON));
 		
 		result.andExpect(status().isOk());
