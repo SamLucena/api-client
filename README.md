@@ -39,3 +39,5 @@ Sugiro o [Postman](https://www.postman.com)
 ```bash
 git clone https://github.com/SamLucena/api-client.git
 ```
+### Teste a API
+CI/CD no Heroku: [API-CLIENT](https://clients-samlucena.herokuapp.com)
