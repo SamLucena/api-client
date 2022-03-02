@@ -39,5 +39,15 @@ Sugiro o [Postman](https://www.postman.com)
 ```bash
 git clone https://github.com/SamLucena/api-client.git
 ```
-### Teste a API
+## Teste a API
 CI/CD no Heroku: [API-CLIENT](https://clients-samlucena.herokuapp.com)
+
+### Docker
+Rode a API em um container do Docker.
+
+- Instale o Docker: [GET-DOCKER](https://docs.docker.com/get-docker/)
+```bash
+    docker run -p 80:8080 --name dscatalog-docker mydockerid103107/dsclient:v1
+```
+Por padrão o container do Docker rodará na porta ``8080``, porém ela pode ser mudada na opção ``-p`` do comando Docker.
+Neste caso coloquei a porta `80`.
