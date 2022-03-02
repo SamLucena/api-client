@@ -1,6 +1,5 @@
 package com.devsuperior.dsclient.resources;
 
-import static org.hamcrest.CoreMatchers.endsWith;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -20,7 +19,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
 import com.devsuperior.dsclient.dto.ClientDTO;
-import com.devsuperior.dsclient.services.ClientService;
 import com.devsuperior.dsclient.tests.Factory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
