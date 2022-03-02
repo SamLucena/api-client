@@ -1,4 +1,4 @@
-package com.devsuperior.dsclient.entity;
+package com.devsuperior.dsclient.entities;
 
 import java.io.Serializable;
 import java.time.Instant;

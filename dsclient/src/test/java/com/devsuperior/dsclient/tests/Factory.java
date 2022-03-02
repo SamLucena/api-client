@@ -3,7 +3,7 @@ package com.devsuperior.dsclient.tests;
 import java.time.Instant;
 
 import com.devsuperior.dsclient.dto.ClientDTO;
-import com.devsuperior.dsclient.entity.Client;
+import com.devsuperior.dsclient.entities.Client;
 
 public class Factory {
 

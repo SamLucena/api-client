@@ -3,7 +3,7 @@ package com.devsuperior.dsclient.dto;
 import java.io.Serializable;
 import java.time.Instant;
 
-import com.devsuperior.dsclient.entity.Client;
+import com.devsuperior.dsclient.entities.Client;
 
 public class ClientDTO implements Serializable{
 	private static final long serialVersionUID = 1L;

@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.dsclient.dto.ClientDTO;
-import com.devsuperior.dsclient.entity.Client;
+import com.devsuperior.dsclient.entities.Client;
 import com.devsuperior.dsclient.repositories.ClientRepository;
 import com.devsuperior.dsclient.services.exceptions.DatabaseException;
 import com.devsuperior.dsclient.services.exceptions.ResourceNotFoundException;

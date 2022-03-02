@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.dao.EmptyResultDataAccessException;
 
-import com.devsuperior.dsclient.entity.Client;
+import com.devsuperior.dsclient.entities.Client;
 import com.devsuperior.dsclient.tests.Factory;
 
 @DataJpaTest

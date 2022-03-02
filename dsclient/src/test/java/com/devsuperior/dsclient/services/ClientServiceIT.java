@@ -14,7 +14,7 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
 import com.devsuperior.dsclient.dto.ClientDTO;
-import com.devsuperior.dsclient.entity.Client;
+import com.devsuperior.dsclient.entities.Client;
 import com.devsuperior.dsclient.repositories.ClientRepository;
 import com.devsuperior.dsclient.services.exceptions.ResourceNotFoundException;
 import com.devsuperior.dsclient.tests.Factory;
