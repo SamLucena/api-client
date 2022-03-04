@@ -1,17 +1,17 @@
-name: 'MainToHeroku'
+name: Deploy
 
 on:
   push:
     branches:
-      - 'main'
+      - master
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Backing to root directory
-        run: cd ../../
-
-      - name: Deploy on Heroku 
-        run: git subtree push --prefix dsclient heroku main
-        working-directory: dsclient
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "clients-samlucena"
+          heroku_email: "samuellucenadeabreu@hotmail.com"
