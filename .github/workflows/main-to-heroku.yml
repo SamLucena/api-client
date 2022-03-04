@@ -13,4 +13,5 @@ jobs:
         run: cd ../../
 
       - name: Deploy on Heroku 
-        run: ls
+        run: git subtree push --prefix dsclient heroku main
+        working-directory: api-client
