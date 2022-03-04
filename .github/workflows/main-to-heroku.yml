@@ -9,5 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Backing to root directory
+        run: cd ../../
+
       - name: Deploy on Heroku 
         run: git subtree push --prefix dsclient heroku main
