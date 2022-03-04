@@ -1,0 +1,13 @@
+name: 'MainToHeroku'
+
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy on Heroku 
+        run: git subtree push --prefix dsclient heroku main
