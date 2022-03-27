@@ -9,7 +9,7 @@ Porta padrão do Spring: ``localhost:8080``
 
 ## Exemplos Requisições
 
-- GET: ``localhost:8080/clients?page=0&linesPerPage=6&direction=ASC&orderBy=id``
+- GET: ``localhost:8080/clients?page=0&size=6&sort=id,desc``
 - GET: ``localhost:8080/clients/1``
 - POST: ``localhost:8080/clients``
 ```json
