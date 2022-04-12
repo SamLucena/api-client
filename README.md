@@ -47,7 +47,7 @@ Rode a API em um container do Docker.
 
 - Instale o Docker: [GET-DOCKER](https://docs.docker.com/get-docker/)
 ```bash
-    docker run -p 80:8080 --name dscatalog-docker mydockerid103107/dsclient:v1
+    docker run -p 80:8080 --name dsclient-docker mydockerid103107/dsclient:v1
 ```
 Por padrão o container do Docker rodará na porta ``8080``, porém ela pode ser mudada na opção ``-p`` do comando Docker.
 Neste caso coloquei a porta `80`.
